@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "1374bcc6-9aab-4e43-ab81-3f3f53b2f5d9",
-		"name": "backend",
+		"_postman_id": "b00d780e-3ea8-4aea-9c0f-76b1301a1652",
+		"name": "backend Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21170892"
 	},
@@ -32,17 +32,29 @@
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					},
 					{
 						"key": "Content-Type",
-						"value": "text",
+						"value": "application/x-www-form-urlencoded",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"flavie78@example.com\",\r\n    \"password\": \"12345\"\r\n}"
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
 				},
 				"url": {
 					"raw": "http://localhost:8000/api/login",
